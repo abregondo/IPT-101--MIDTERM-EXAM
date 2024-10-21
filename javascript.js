@@ -19,21 +19,21 @@ const products = [
     }
 ];
 function addToCart(productId) {
-    const product = products.find(p => p.id === productId);
+    const product = products.find(p => (link unavailable) === productId);
     if (product && product.stock > 0) {
-      product.stock--;
-      displayNotification(`${product.name} added to cart successfully.`); 
-      document.getElementById(`stock${productId}`).textContent = `In Stock: ${product.stock}`;
+        product.stock--;
+        displayNotification(${product.name} added to cart successfully.);
+        document.getElementById(stock${productId}).textContent = In Stock: ${product.stock};
     } else {
-      alert(`Sorry, ${product ? product.name : 'this product'} is out of stock.`);
+        alert(Sorry, ${product ? product.name : 'this product'} is out of stock.);
     }
-  }
+}
 
-  function displayNotification(message) {
+function displayNotification(message) {
     const notification = document.getElementById('notification');
     notification.textContent = message;
     notification.classList.remove('d-none');
     setTimeout(() => {
-      notification.classList.add('d-none'); 
+        notification.classList.add('d-none');
     }, 3000);
-  }
+}
