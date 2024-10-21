@@ -16,7 +16,7 @@ const products = [
   }
 
   function displayNotification(message) {
-    const notification = document.getElementById('notification');
+    const notification = document.getElementById('notif');
     notification.textContent = message;
     notification.classList.remove('d-none');
     setTimeout(() => {
