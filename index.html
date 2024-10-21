@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopMe</title>
 </head>
 <style>
-    h1{background-color: grey;
-    height: 80px;
-    padding-top: 15px;
-    }
+    h1 { background-color: grey; height: 80px; padding-top: 15px; }
 </style>
 <body>
   <div class="container mt-5">
@@ -19,11 +16,11 @@
     <div class="row">
         <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="laptop.webp"class= "card-img-top" alt="Product Image">
+              <img src="laptop.webp" class="card-img-top" alt="Product Image">
               <div class="card-body">
                   <h5 class="card-title">LENOVO LAPTOP INTEL I3</h5>
                   <p class="card-text">Price: ₱43,000</p>
-                  <p class="card-text">In Stock: 10</p>
+                  <p id="stock1" class="card-text">In Stock: 10</p>
                   <button class="btn btn-primary" onclick="addToCart(1)">Add to Cart</button>
               </div>
             </div>
@@ -32,9 +29,9 @@
             <div class="card">
                 <img src="headphone.webp" class="card-img-top" alt="Product Image">
                 <div class="card-body">
-                    <h5 class="card-title">RAKK Kusog Pro 7.1 </h5>
-                    <p class="card-text">Price:₱995</p>
-                    <p class="card-text">In Stock: 54</p>
+                    <h5 class="card-title">RAKK Kusog Pro 7.1</h5>
+                    <p class="card-text">Price: ₱995</p>
+                    <p id="stock2" class="card-text">In Stock: 54</p>
                     <button class="btn btn-primary" onclick="addToCart(2)">Add to Cart</button>
                 </div>
             </div>
@@ -45,7 +42,7 @@
               <div class="card-body">
                   <h5 class="card-title">Limeide Gtx300</h5>
                   <p class="card-text">Price: ₱238</p>
-                  <p class="card-text">In Stock: 25</p>
+                  <p id="stock3" class="card-text">In Stock: 25</p>
                   <button class="btn btn-primary" onclick="addToCart(3)">Add to Cart</button>
               </div>
           </div>
@@ -55,3 +52,5 @@
   <script src="javascript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
