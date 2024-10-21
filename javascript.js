@@ -1,7 +1,7 @@
 const products = [
-    {"id": 1, "name": "Laptop", "price": 1500, "stock": 5},
-    {"id": 2, "name": "Headphones", "price": 100, "stock": 10},
-    {"id": 3, "name": "Keyboard", "price": 50, "stock": 20}
+    {"id": 1, "name": "LENOVO LAPTOP INTEL I3", "price": 43000, "stock": 10},
+    {"id": 2, "name": "RAKK Kusog Pro 7.1", "price": 995, "stock": 54},
+    {"id": 3, "name": "Limeide Gtx300", "price": 238, "stock": 25}
   ];
 
   function addToCart(productId) {
